@@ -12,9 +12,10 @@ import React from 'react';
 import HomePage from './pages/Homepage';
 import Microphone from './pages/Microphone';
 import ShowAvailableFlights from './pages/ShowAvailableFlights';
-
+import ChooseTicketType from './pages/ChooseTicketType';
+import ChoosePassengers from './pages/ChoosePassengers';
 function App(): JSX.Element {
-  return <HomePage />;
+  return <ChoosePassengers />;
 }
 /*
     <NavigationContainer>

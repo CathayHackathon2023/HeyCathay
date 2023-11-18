@@ -25,5 +25,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   },
+  selected: {
+    backgroundColor: '#005D63',
+    borderRadius: 5,
+  },
 });
 export default styles;
