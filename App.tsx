@@ -14,7 +14,7 @@ import Microphone from './pages/Microphone';
 import ShowAvailableFlights from './pages/ShowAvailableFlights';
 
 function App(): JSX.Element {
-  return <ShowAvailableFlights />;
+  return <HomePage />;
 }
 /*
     <NavigationContainer>

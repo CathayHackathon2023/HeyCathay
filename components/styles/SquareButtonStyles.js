@@ -26,5 +26,14 @@ const styles = StyleSheet.create({
     fontWeight: 'light',
     fontSize: 12,
   },
+  innerContainerType2: {
+    flex: 1,
+    alignSelf: 'flex-start',
+  },
+  imageContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignSelf: 'flex-end',
+  },
 });
 export default styles;

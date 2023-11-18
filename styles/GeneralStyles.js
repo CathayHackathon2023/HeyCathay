@@ -19,9 +19,14 @@ const styles = StyleSheet.create({
   textHeader2: {fontWeight: 'bold', fontSize: 16, color: '#6F6F6F'},
   leftAlign: {
     alignItems: 'flex-start',
+    alignContent: 'flex-end',
     marginRight: '5%',
   },
-  rightAlign: {alignItems: 'flex-end', marginLeft: '5%'},
+  rightAlign: {
+    alignSelf: 'flex-end',
+    marginLeft: '5%',
+    alignContent: 'flex-end',
+  },
   bottomMargin10: {marginBottom: '10%'},
   bottomMargin5: {marginBottom: '5%'},
   bottomMargin15: {marginBottom: '15%'},

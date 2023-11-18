@@ -6,6 +6,7 @@ import generalStyles from './../styles/GeneralStyles';
 import FlightInfoButton from '../components/FlightInfoButton';
 
 import {View, Image, SafeAreaView, Text} from 'react-native';
+import MicrophoneButton from '../components/MicrophoneButton';
 
 function ShowAvailableFlights(): JSX.Element {
   return (
@@ -25,6 +26,10 @@ function ShowAvailableFlights(): JSX.Element {
           </View>
         </View>
         <FlightInfoButton />
+        <View
+          style={{alignItems: 'center', justifyContent: 'flex-end', flex: 1}}>
+          <MicrophoneButton />
+        </View>
       </View>
     </SafeAreaView>
   );

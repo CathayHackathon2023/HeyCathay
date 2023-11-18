@@ -25,7 +25,7 @@ function HomePage(): JSX.Element {
           style={[
             generalStyles.row,
             generalStyles.center,
-            generalStyles.bottomMargin15,
+            generalStyles.bottomMargin5,
           ]}>
           <Text style={generalStyles.textHeader}>Welcome Mr.Chan</Text>
         </View>
@@ -33,7 +33,7 @@ function HomePage(): JSX.Element {
           style={[
             generalStyles.row,
             generalStyles.center,
-            generalStyles.bottomMargin15,
+            generalStyles.bottomMargin10,
           ]}>
           <Text style={generalStyles.textHeader2}>Your Upcoming Flights:</Text>
         </View>
@@ -46,24 +46,24 @@ function HomePage(): JSX.Element {
         </View>
 
         <View
-          style={[
-            generalStyles.row,
-            {alignContent: 'flex-end', alignItems: 'flex-end'},
-          ]}>
-          <SquareButton
-            text={'Book flight'}
-            img={'book_flight.png'}
-            background_color={'#93B3C8'}
-            style={'left'}
-          />
-          <SquareButton
-            text={'Book Hotel'}
-            img={'hotel.png'}
-            background_color={'#00AEEF'}
-            style={'right'}
-          />
+          style={[{alignContent: 'flex-end', alignItems: 'flex-end', flex: 1}]}>
+          <View style={generalStyles.row}>
+            <SquareButton
+              text={'Book flight'}
+              img={'book_flight'}
+              background_color={'#93B3C8'}
+              style={'left'}
+            />
+            <SquareButton
+              text={'Book Hotel'}
+              img={'hotel'}
+              background_color={'#00AEEF'}
+              style={'right'}
+            />
+          </View>
         </View>
-
+      </View>
+      <View style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
         <MicrophoneButton />
       </View>
     </SafeAreaView>
