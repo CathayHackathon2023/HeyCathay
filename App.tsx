@@ -11,13 +11,10 @@ import React from 'react';
 
 import HomePage from './pages/Homepage';
 import Microphone from './pages/Microphone';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-
-const Stack = createStackNavigator();
+import ShowAvailableFlights from './pages/ShowAvailableFlights';
 
 function App(): JSX.Element {
-  return <Microphone />;
+  return <ShowAvailableFlights />;
 }
 /*
     <NavigationContainer>

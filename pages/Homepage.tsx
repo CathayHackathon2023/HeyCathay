@@ -11,18 +11,10 @@ import React from 'react';
 import SquareButton from '../components/SquareButton';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import generalStyles from './../styles/GeneralStyles';
-import {useNavigation} from '@react-navigation/native';
-import {
-  SafeAreaView,
-  View,
-  Image,
-  Text,
-  ScrollView,
-  Pressable,
-} from 'react-native';
+import {SafeAreaView, View, Image, Text, ScrollView} from 'react-native';
+import MicrophoneButton from '../components/MicrophoneButton';
 
 function HomePage(): JSX.Element {
-  const navigation = useNavigation();
   return (
     <SafeAreaView style={generalStyles.backgroundStyles}>
       <View style={[generalStyles.screenSize, generalStyles.center]}>
@@ -72,16 +64,7 @@ function HomePage(): JSX.Element {
           />
         </View>
 
-        <Pressable
-          onPress={() => {
-            //navigation.navigate(Microphone);
-          }}
-          style={{justifyContent: 'flex-end'}}>
-          <Image
-            source={require('./../assets/microphone.png')}
-            style={{width: 60, height: 60}}
-          />
-        </Pressable>
+        <MicrophoneButton />
       </View>
     </SafeAreaView>
   );
