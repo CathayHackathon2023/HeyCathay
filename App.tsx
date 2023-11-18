@@ -14,8 +14,9 @@ import Microphone from './pages/Microphone';
 import ShowAvailableFlights from './pages/ShowAvailableFlights';
 import ChooseTicketType from './pages/ChooseTicketType';
 import ChoosePassengers from './pages/ChoosePassengers';
+import ChooseTypeOfTicket from './pages/ChooseTypeOfTrip';
 function App(): JSX.Element {
-  return <ChoosePassengers />;
+  return <ChooseTypeOfTicket />;
 }
 /*
     <NavigationContainer>

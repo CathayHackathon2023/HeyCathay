@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     fontAlign: 'center',
     alignSelf: 'center',
   },
-  screenSize: {width: windowWidth * 0.8, height: windowHeight * 0.8},
+  screenSize: {width: windowWidth * 0.8, height: windowHeight},
   textHeader: {fontWeight: 'bold', fontSize: 18},
   textHeader2: {fontWeight: 'bold', fontSize: 16, color: '#6F6F6F'},
   leftAlign: {
