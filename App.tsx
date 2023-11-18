@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * Sample React Native App
@@ -7,57 +8,23 @@
  */
 
 import React from 'react';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import HomePage from './pages/Homepage';
+import Microphone from './pages/Microphone';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+
+const Stack = createStackNavigator();
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <Text style={{color: '#FFF'}}>Hello World!</Text>
-    </SafeAreaView>
-  );
+  return <Microphone />;
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
-
+/*
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="Microphone" component={Microphone} />
+      </Stack.Navigator>
+    </NavigationContainer>
+*/
 export default App;
